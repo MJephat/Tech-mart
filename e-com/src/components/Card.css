@@ -1,0 +1,93 @@
+.card {
+    padding: 1rem;
+  }
+  .card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .card-image-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 1px;
+    width: 100%;
+  }
+  .card-image {
+    width: calc(100% / 6);
+    height: auto;
+    margin: 0 0.5rem;
+    transition: transform 0.5s, filter 0.5s, opacity 0.5s;
+  }
+  .card-image:hover {
+    transform: scale(1.1);
+  }
+  .card-image.active-image {
+    filter: grayscale(0%) brightness(100%);
+    opacity: 1;
+  }
+  .card-image.active-effect-shake {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  .card-image.active-effect-rotate {
+    animation: rotate 1s linear both;
+  }
+  .card-image.active-effect-zoom-in {
+    animation: zoom-in 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  }
+  .card-image.active-effect-brighten {
+    animation: brighten 1s linear both;
+  }
+  .card-image.active-effect-fade {
+    animation: fade 1s linear both;
+  }
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes zoom-in {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  @keyframes brighten {
+    from {
+      filter: brightness(50%);
+    }
+    to {
+      filter: brightness(100%);
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

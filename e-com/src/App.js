@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar"
 import Menu from "./components/menu"
 import Products from "./components/products"
 import Signin from "./components/signin"
-import Signup  from "./components/singup"
-import Footer from './Footer';
+import Signup  from "./components/signup"
+import Footer from './components/Footer';
 // import Electronics from './components/ElectronicsList';
 // import Loginform from './components/Loginform';
 import BannerCard from './components/BannerCard';
