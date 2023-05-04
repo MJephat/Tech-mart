@@ -1,5 +1,5 @@
 import React from 'react';
-import Loginform from './LoginForm';
+import Loginform from './Loginform';
 const signin= () =>{
   return (
     <div>
