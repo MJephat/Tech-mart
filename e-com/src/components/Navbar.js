@@ -1,11 +1,14 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import {  Link } from "react-router-dom";
 
-const navbar= () =>{
+const Navbar= () =>{
+    const [ find, setFind] = useState("");
+    console.log(find)
+
   return (
   <nav className='nav'>
     <span className='logo'>ⓉⒺⒸⒽⓂⒶⓇⓉ</span>
-    <input id="search" type="text" placeholder='search' />
+    {/* <input id="search" onChange={(e)=>setFind(e.target.value)}  type="text" placeholder='search' /> */}
     <li>
       <Link to="/signup">signup</Link>
     </li>
@@ -23,4 +26,4 @@ const navbar= () =>{
   </nav>
   );
 }
-export default navbar;
+export default Navbar;

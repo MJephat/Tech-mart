@@ -1,11 +1,18 @@
 import React from 'react';
+import Carousel  from './Carousel';
+import BannerCard from './BannerCard';
+import Card from './Card';
+import { Order } from './Order';
+// import Sidebar from './SideBar';
 
 const menu = () =>{
   return (
     <div>
-      <h3>shop here</h3>
-     
-        <p> this is the menu.</p>
+      {<Carousel />}
+      {<Card />}
+      {/* {<Sidebar />} */}
+      {<BannerCard />}
+      {<Order />}
      
     </div>
   );
